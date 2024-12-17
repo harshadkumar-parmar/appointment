@@ -1,0 +1,12 @@
+{
+  "doctor_id_must_be_string": "Arzt-ID muss eine Zeichenkette sein.",
+  "doctor_id_required": "Arzt-ID ist erforderlich.",
+  "patient_id_must_be_string": "Patienten-ID muss eine Zeichenkette sein.",
+  "patient_id_required": "Patienten-ID ist erforderlich.",
+  "start_time_must_be_date": "Startzeit muss ein gültiges Datum sein.",
+  "start_time_required": "Startzeit ist erforderlich.",
+  "end_time_must_be_date": "Endzeit muss ein gültiges Datum sein.",
+  "end_time_required": "Endzeit ist erforderlich.",
+  "start_time_before_end_time": "Startzeit muss vor der Endzeit liegen.",
+  "conflict": "Termin für den gleichen Zeitraum bereits gebucht."
+}
