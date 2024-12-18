@@ -93,8 +93,9 @@ export class AppointmentController {
   async getAppointmentsByDoctors(
     @Query('doctorIds') doctorIds: string[],
   ): Promise<{ [key: string]: Appointment[] }> {
-    // NestJs supports array string for query paramter but split the string in case of single array element
-    // Ensure doctorIds is an array
+    // NestJs supports array string for query paramter 
+    // but it does not work with single element for query parameter
+    // so we need to convert string to array
     if (!Array.isArray(doctorIds)) {
       doctorIds = [doctorIds];
     }

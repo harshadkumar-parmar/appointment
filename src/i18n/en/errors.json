@@ -8,5 +8,6 @@
     "end_time_must_be_date": "End time must be a valid date.",
     "end_time_required": "End time is required.",
     "start_time_before_end_time": "Start time must be before end time.",
-    "conflict": "Appointment already booked for the same timeslot."
+    "conflict": "Appointment already booked for the same timeslot.",
+    "stringArray":"{param} is required"
 }

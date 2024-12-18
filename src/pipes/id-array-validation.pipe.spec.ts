@@ -16,7 +16,7 @@ describe('IDArrayValidationPipe', () => {
           useValue: {
             translate: jest.fn((key: string) => {
               const messages = {
-                'errors.noDoctorIds': 'No doctor IDs were provided.',
+                'errors.stringArray': 'No doctor IDs were provided.',
               };
               return messages[key];
             }),
@@ -38,7 +38,7 @@ describe('IDArrayValidationPipe', () => {
     expect(() => pipe.transform(value, { type: 'query' })).toThrow(
       BadRequestException,
     );
-    expect(i18nService.translate).toHaveBeenCalledWith('errors.noDoctorIds');
+    expect(i18nService.translate).toHaveBeenCalledWith('errors.stringArray');
   });
 
   it('should throw an error if array is empty', () => {
@@ -46,7 +46,7 @@ describe('IDArrayValidationPipe', () => {
     expect(() => pipe.transform(value, { type: 'query' })).toThrow(
       BadRequestException,
     );
-    expect(i18nService.translate).toHaveBeenCalledWith('errors.noDoctorIds');
+    expect(i18nService.translate).toHaveBeenCalledWith('errors.stringArray');
   });
 
   it('should pass validation if array contains elements', () => {
