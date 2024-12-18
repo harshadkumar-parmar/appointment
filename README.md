@@ -15,8 +15,8 @@ To get a local copy up and running, follow these steps:
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/your-username/doctor-appointment.git
-cd doctor-appointment
+git clone https://github.com/harshadkumar-parmar/appointment.git
+cd appointment
 ```
 
 ### Install Dependencies
